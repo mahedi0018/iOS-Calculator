@@ -24,23 +24,25 @@ class ViewController: UIViewController {
             displayLabel.text = String(newValue)
         }
     }
+    
+    private var calculatorLogic  = CalculatorLogic()
     @IBAction func calcButtonPressed(_ sender: UIButton) {
         //What should happen when a non-number button is pressed
         isFinishedTypingNum = true
-    
-        let calMethod = sender.currentTitle!
-        print(calMethod)
-        var calculatorLogic  = CalculatorLogic(number: displayValue)
-        guard let result = calculatorLogic.calculate(symbol: calMethod) else{
-            fatalError("Can't convert dispaly label to Double.")
+        
+        calculatorLogic.setNumber(displayValue)
+        if let calMethod = sender.currentTitle{
+            if let result = calculatorLogic.calculate(symbol: calMethod){
+                displayValue = result
+            }
+            
         }
-      displayValue = result
     }
-
+    
     
     @IBAction func numButtonPressed(_ sender: UIButton) {
         //What should happen when a number is entered into the keypad
-       
+        
         if let numValue = sender.currentTitle {
             if isFinishedTypingNum == true {
                 displayLabel.text = numValue
@@ -54,16 +56,16 @@ class ViewController: UIViewController {
                     if !isInt {
                         return
                     }
-//                    displayLabel.text = displayLabel.text! + numValue
+                    //                    displayLabel.text = displayLabel.text! + numValue
                 }
                 displayLabel.text = displayLabel.text! + numValue
             }
             
         }
         
-       
-    
+        
+        
     }
-
+    
 }
 

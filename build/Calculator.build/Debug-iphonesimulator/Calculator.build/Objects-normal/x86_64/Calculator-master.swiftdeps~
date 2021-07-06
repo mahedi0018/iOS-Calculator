@@ -1,7 +1,7 @@
 version: "Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)"
 options: "19d9ee0ec11dce8ce0bdbb493e64834b"
-build_time: [1613251129, 237089000]
+build_time: [1625583664, 122912000]
 inputs:
-  "/Users/mahedi/Desktop/ios Application/Calculator-Advanced-Swift-iOS13/Calculator/Controller/ViewController.swift": !private [1613250947, 958792340]
+  "/Users/mahedi/Desktop/ios Application/Calculator-Advanced-Swift-iOS13/Calculator/Controller/ViewController.swift": [1625583270, 423514470]
   "/Users/mahedi/Desktop/ios Application/Calculator-Advanced-Swift-iOS13/Calculator/AppDelegate.swift": [1612200839, 474960031]
-  "/Users/mahedi/Desktop/ios Application/Calculator-Advanced-Swift-iOS13/Calculator/Model/CalculatorLogic.swift": [1613251127, 567040725]
+  "/Users/mahedi/Desktop/ios Application/Calculator-Advanced-Swift-iOS13/Calculator/Model/CalculatorLogic.swift": [1625583655, 785641653]

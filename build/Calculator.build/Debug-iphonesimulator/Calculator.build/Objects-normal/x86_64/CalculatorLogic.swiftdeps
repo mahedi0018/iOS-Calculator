@@ -8,7 +8,9 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "*"
+- !private "+"
 - !private "-"
+- !private "/"
 - "AssignmentPrecedence"
 - "CalculatorLogic"
 - "Double"
@@ -17,7 +19,9 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - !private "UnicodeScalarType"
+- !private "intermediateCalculation"
 - !private "number"
+- !private "performTwoNumCal"
 - !private "print"
 - !private "~="
 depends-member:
@@ -25,8 +29,11 @@ depends-member:
 - ["10Calculator0A5LogicV", "String"]
 - ["10Calculator0A5LogicV", "calculate"]
 - ["10Calculator0A5LogicV", "init"]
-- ["10Calculator0A5LogicV", "number"]
+- !private ["10Calculator0A5LogicV", "intermediateCalculation"]
+- !private ["10Calculator0A5LogicV", "number"]
+- !private ["10Calculator0A5LogicV", "performTwoNumCal"]
 - !private ["10Calculator0A5LogicV", "print"]
+- ["10Calculator0A5LogicV", "setNumber"]
 - !private ["So8NSCodingP", ""]
 - !private ["So8NSObjectP", ""]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
@@ -69,4 +76,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.3.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "d735199667644d92f4b82500a5952a97"
+interface-hash: "247cdec2cc381047b7d0f11194236822"
